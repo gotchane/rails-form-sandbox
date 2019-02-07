@@ -5,6 +5,7 @@
     %tr
       %th Titie
       %th Content
+      %th Tag String
       %th
       %th
       %th
@@ -14,6 +15,7 @@
       %tr
         %td= post.titie
         %td= post.content
+        %td= post.tag_string
         %td= link_to 'Show', post
         %td= link_to 'Edit', edit_post_path(post)
         %td= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
